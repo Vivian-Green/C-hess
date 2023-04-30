@@ -504,7 +504,7 @@ int getPossiblePawnMoves(struct square piecePosition, char pieceColor, int possi
 int getPossibleMoves(struct square piecePosition, int possibleMoves[50][2]){
   //gets piece type, and figures out valid moves for it
   
-  wprintf(L"piecePosition: %d\n", piecePosition.row);
+  //wprintf(L"piecePosition: %d\n", piecePosition.row);
   char pieceColor = board[piecePosition.row][piecePosition.column*2];
   char pieceType = board[piecePosition.row][piecePosition.column*2+1];
 
