@@ -98,7 +98,6 @@ char getSquareColor(int index1, int index2){
 }
 
 void printBoard(int selectedColumn, int selectedRow, int moveCount){
-  wprintf(L"\nENTERED PRINTBOARD!\n");
   wchar_t displayBoard[8][240];
   /*240 is larger than should ever be needed: 96 for 8 pieces that are each 
   12 charachers long, plus the highlightedFormatting & defaultFormatting lengths for each, 
@@ -547,7 +546,7 @@ void turn(int possibleMoves[50][2]){
 
   //print game state
   turnCounter += 1;
-  wprintf(L"%s qturn %d: %s\n", highlightedFormatting, turnCounter, defaultFormatting);
+  wprintf(L"\n|||||||||||||||||||||||||||||||||||||turn %d|||||||||||||||||||||||||||||||||||||\n", turnCounter);
   printBoard(-1, -1, moveCount);
 
   if(turnCounter % 2 == 0){
